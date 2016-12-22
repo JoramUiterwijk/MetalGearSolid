@@ -28,8 +28,8 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag == ("Stairs"))
         {
-            y += 1;
-            Debug.Log("Up!");
+            //y += 1;
+            //Debug.Log("Up!");
         }
         else
         {
