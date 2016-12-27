@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Stairs
+  - NormalGround
+  - Water
   layers:
   - Default
   - TransparentFX
