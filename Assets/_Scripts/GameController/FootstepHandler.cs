@@ -9,7 +9,9 @@ public class FootstepHandler : MonoBehaviour
 	[SerializeField]private AudioClip metal;
 
 	[SerializeField]private GameObject riddle;
-	//[SerializeField]private GameObject splash;
+	[SerializeField]private GameObject splash;
+
+	[SerializeField]private GameObject player;
 
 	private void Start()
 	{
@@ -22,13 +24,13 @@ public class FootstepHandler : MonoBehaviour
 
 	public void metalStep()
 	{
-		//audio.playAudio(metal,false);
+		audio.playAudio(metal,false);
 	}
 
 	public void waterStep(Vector3 position)
 	{
 		audio.playAudio (step, false);
 		GameObject theRiddle = Instantiate (riddle, position, Quaternion.Euler(90,0,0)) as GameObject;
-		//GameObject theSplash = Instantiate (splash, position, Quaternion.identity) as GameObject;
+		GameObject theSplash = Instantiate (splash, position, player.transform.localRotation) as GameObject;
 	}
 }

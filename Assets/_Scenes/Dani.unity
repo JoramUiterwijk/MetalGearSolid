@@ -1110,9 +1110,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4c95c7bbb0145588920ca8e1508778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  step: {fileID: 8300000, guid: fab214f7be229417d9e7ecd99278a4a6, type: 3}
+  step: {fileID: 8300000, guid: 6452737aad5c24e328879ad57e7e0ac2, type: 3}
   metal: {fileID: 0}
   riddle: {fileID: 1744323483708186, guid: b71b795243377492fa843d7319ab3e27, type: 2}
+  splash: {fileID: 1500717144825124, guid: 6535cc9976639497d8708365ba40bf5b, type: 2}
+  player: {fileID: 2053355495}
 --- !u!4 &1692857396
 Transform:
   m_ObjectHideFlags: 0
