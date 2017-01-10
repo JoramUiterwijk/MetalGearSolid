@@ -13,23 +13,19 @@ public class MoveCamera : MonoBehaviour
 
 	public void newPosition (Transform newTrans)
     {
+     
         targetPosition = newTrans.position;
-        velocity = newTrans.position - this.gameObject.transform.position;
-        velocity.Normalize();
-        velocity = velocity * speed;
-        //targetPosition = newTrans.position;
         targetRotation = newTrans.localRotation;
 	}
 
 	void Update ()
     {
-        if(Vector3.Distance(targetPosition,this.gameObject.transform.position) > 0.1)
         smoothMove();
     }
 
     private void smoothMove()
     {
-        this.gameObject.transform.position += velocity * Time.time;
+        this.gameObject.transform.position = targetPosition;
         this.gameObject.transform.localRotation = targetRotation;
     }
 }
