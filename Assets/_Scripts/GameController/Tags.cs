@@ -8,4 +8,6 @@ public class Tags
 	public const string ground = "NormalGround";
 	public const string water = "Water";
 	public const string stairs = "Stairs";
+    public const string stairUp = "StairUp";
+    public const string stairDown = "StairDown";
 }
