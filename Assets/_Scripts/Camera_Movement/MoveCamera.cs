@@ -23,7 +23,7 @@ public class MoveCamera : MonoBehaviour
         targetPosition = newTrans.position;
         targetRotation = newTrans.localRotation;
         newPositionReached = false;
-        slowDownSpeed =
+        
     }
 
 	void Update ()
