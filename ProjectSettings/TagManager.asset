@@ -9,6 +9,8 @@ TagManager:
   - Water
   - NewPosition
   - newroom
+  - StairUp
+  - StairDown
   layers:
   - Default
   - TransparentFX
