@@ -7,31 +7,36 @@ public class MoveCamera : MonoBehaviour
     [SerializeField]
     private float maxSpeed = 10;
 
-    [SerializeField]
-    private float mass = 10;
+    private float slowDownSpeed;
 
-    private Vector3 position;
-    private Vector3 velocity;
     private Vector3 targetPosition;
-    private Quaternion targetRotation;
-    private float rotateStep;
 
-    private void Start()
-    {
-        position = this.gameObject.transform.position;
-    }
+    private Quaternion targetRotation;
+
+    [SerializeField]
+    private float rotateSpeed = 10;
+
+    private bool newPositionReached = true;
 
 	public void newPosition (Transform newTrans)
     {    
         targetPosition = newTrans.position;
         targetRotation = newTrans.localRotation;
-        rotateStep = (targetRotation.eulerAngles.x - this.gameObject.transform.localRotation.eulerAngles.x)/mass;
+        newPositionReached = false;
+        slowDownSpeed =
     }
 
 	void Update ()
     {
-        if(Vector3.Distance(targetPosition, this.gameObject.transform.position) > 0.5)
-        smoothMove();
+        if(Vector3.Distance(targetPosition, this.gameObject.transform.position) > 0.3 && !newPositionReached)
+            smoothMove();
+        else
+            newPositionReached = true;
+
+        if (Vector3.Distance(targetPosition, this.gameObject.transform.position) > 0.3 && Vector3.Distance(targetPosition, this.gameObject.transform.position) < 0.8 && !newPositionReached)
+            smothSlowdown();
+       
+        if(!newPositionReached)
         smoothRotate();
     }
 
@@ -42,20 +47,19 @@ public class MoveCamera : MonoBehaviour
 
         desiredStep.Normalize();
 
-        Vector3 desiredVelocity = desiredStep * maxSpeed;
+        desiredStep = desiredStep * maxSpeed;
 
-        Vector3 steeringForce = desiredVelocity - velocity;
+        transform.position += desiredStep * Time.deltaTime;
+    
+    }
+    
+    private void smothSlowdown()
+    {
 
-        velocity = velocity + steeringForce / mass;
-
-        position += velocity * Time.deltaTime;
-        transform.position = position;
-
-        //this.gameObject.transform.position = targetPosition;      
     }
 
     private void smoothRotate()
     {
-        gameObject.transform.localRotation = targetRotation;
+        gameObject.transform.localRotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotateSpeed); ;
     }
 }
