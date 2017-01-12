@@ -41,7 +41,7 @@ public class Clips : MonoBehaviour
 	private void Start()
 	{
 		clipCapacity = 15;
-		clipAmount = 5;
+		clipAmount = 4;
 		curClipCapacity = clipCapacity;
 		reloading = false;
 	}
