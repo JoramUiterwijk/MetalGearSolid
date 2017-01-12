@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float y = 0f;
+    //private float y = 0f;
 
     void Update()
     {
@@ -12,8 +12,8 @@ public class PlayerController : MonoBehaviour
         var z = Input.GetAxis("Vertical") * Time.deltaTime * 5.0f;
 
         transform.Rotate(0, x, 0);
-        transform.Translate(0, y, z);
-
+        transform.Translate(0, 0, z);
+        /*
         if (Input.GetKeyDown(KeyCode.Space))
         {
             y = 1f;
@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            y = 0f;
-        }
+            
+        }*/
     }
 }

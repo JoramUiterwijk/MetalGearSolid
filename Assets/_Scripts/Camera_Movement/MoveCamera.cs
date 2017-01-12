@@ -5,31 +5,76 @@ using UnityEngine;
 public class MoveCamera : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 2;
+    private float maxSpeed = 10;
+
+    private float slowDownSpeed;
 
     private Vector3 targetPosition;
-    private Vector3 velocity;
+
     private Quaternion targetRotation;
 
-	public void newPosition (Transform newTrans)
-    {
+    [SerializeField]
+    private float rotateSpeed = 10;
+
+    private bool newPositionReached = true;
+    private bool newRotationReached = true;
+
+    public void newPosition (Transform newTrans)
+    {    
         targetPosition = newTrans.position;
-        velocity = newTrans.position - this.gameObject.transform.position;
-        velocity.Normalize();
-        velocity = velocity * speed;
-        //targetPosition = newTrans.position;
         targetRotation = newTrans.localRotation;
-	}
+        newPositionReached = false;
+        newRotationReached = false;
+        slowDownSpeed = maxSpeed;
+    }
 
 	void Update ()
     {
-        if(Vector3.Distance(targetPosition,this.gameObject.transform.position) > 0.1)
-        smoothMove();
+        if(Vector3.Distance(targetPosition, this.gameObject.transform.position) > 2 && !newPositionReached)
+            smoothMove();      
+
+        if (Vector3.Distance(targetPosition, this.gameObject.transform.position) > 0.3 && Vector3.Distance(targetPosition, this.gameObject.transform.position) <= 2f && !newPositionReached)
+            smothSlowdown();
+        else if(Vector3.Distance(targetPosition, this.gameObject.transform.position) <= 0.3)
+            newPositionReached = true;
+
+        if (gameObject.transform.localRotation != targetRotation && !newRotationReached)
+            smoothRotate();
+        else
+            newRotationReached = true;
     }
 
     private void smoothMove()
     {
-        this.gameObject.transform.position += velocity * Time.time;
-        this.gameObject.transform.localRotation = targetRotation;
+        //smooth naar de target bewegen. moet nog aan werken!!!
+        Vector3 desiredStep = targetPosition - gameObject.transform.position;
+
+        desiredStep.Normalize();
+
+        desiredStep = desiredStep * maxSpeed;
+
+        transform.position += desiredStep * Time.deltaTime;
+    
+    }
+    
+    private void smothSlowdown()
+    {
+        if(slowDownSpeed > 0.1f)
+        {
+            slowDownSpeed *= 0.87f;
+        }
+
+        Vector3 desiredStep = targetPosition - gameObject.transform.position;
+
+        desiredStep.Normalize();
+
+        desiredStep = desiredStep * slowDownSpeed;
+
+        transform.position += desiredStep * Time.deltaTime;
+    }
+
+    private void smoothRotate()
+    {
+        gameObject.transform.localRotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotateSpeed); ;
     }
 }
