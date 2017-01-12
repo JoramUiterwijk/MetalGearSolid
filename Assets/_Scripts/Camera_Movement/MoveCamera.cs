@@ -17,27 +17,31 @@ public class MoveCamera : MonoBehaviour
     private float rotateSpeed = 10;
 
     private bool newPositionReached = true;
+    private bool newRotationReached = true;
 
-	public void newPosition (Transform newTrans)
+    public void newPosition (Transform newTrans)
     {    
         targetPosition = newTrans.position;
         targetRotation = newTrans.localRotation;
         newPositionReached = false;
-        
+        newRotationReached = false;
+        slowDownSpeed = maxSpeed;
     }
 
 	void Update ()
     {
-        if(Vector3.Distance(targetPosition, this.gameObject.transform.position) > 0.3 && !newPositionReached)
-            smoothMove();
-        else
+        if(Vector3.Distance(targetPosition, this.gameObject.transform.position) > 2 && !newPositionReached)
+            smoothMove();      
+
+        if (Vector3.Distance(targetPosition, this.gameObject.transform.position) > 0.3 && Vector3.Distance(targetPosition, this.gameObject.transform.position) <= 2f && !newPositionReached)
+            smothSlowdown();
+        else if(Vector3.Distance(targetPosition, this.gameObject.transform.position) <= 0.3)
             newPositionReached = true;
 
-        if (Vector3.Distance(targetPosition, this.gameObject.transform.position) > 0.3 && Vector3.Distance(targetPosition, this.gameObject.transform.position) < 0.8 && !newPositionReached)
-            smothSlowdown();
-       
-        if(!newPositionReached)
-        smoothRotate();
+        if (gameObject.transform.localRotation != targetRotation && !newRotationReached)
+            smoothRotate();
+        else
+            newRotationReached = true;
     }
 
     private void smoothMove()
@@ -55,7 +59,18 @@ public class MoveCamera : MonoBehaviour
     
     private void smothSlowdown()
     {
+        if(slowDownSpeed > 0.1f)
+        {
+            slowDownSpeed *= 0.87f;
+        }
 
+        Vector3 desiredStep = targetPosition - gameObject.transform.position;
+
+        desiredStep.Normalize();
+
+        desiredStep = desiredStep * slowDownSpeed;
+
+        transform.position += desiredStep * Time.deltaTime;
     }
 
     private void smoothRotate()
