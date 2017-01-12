@@ -10,4 +10,6 @@ public class Tags
 	public const string stairs = "Stairs";
     public const string stairUp = "StairUp";
     public const string stairDown = "StairDown";
+    public const string newRoom = "NewRoom";
+    public const string newPosition = "NewPosition";
 }

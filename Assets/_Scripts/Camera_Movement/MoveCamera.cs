@@ -30,10 +30,9 @@ public class MoveCamera : MonoBehaviour
 
 	void Update ()
     {
-        if(Vector3.Distance(targetPosition, this.gameObject.transform.position) > 2 && !newPositionReached)
+        if(Vector3.Distance(targetPosition, this.gameObject.transform.position) > 2f && !newPositionReached)
             smoothMove();      
-
-        if (Vector3.Distance(targetPosition, this.gameObject.transform.position) > 0.3 && Vector3.Distance(targetPosition, this.gameObject.transform.position) <= 2f && !newPositionReached)
+        else if (Vector3.Distance(targetPosition, this.gameObject.transform.position) > 0.2 && !newPositionReached)
             smothSlowdown();
         else if(Vector3.Distance(targetPosition, this.gameObject.transform.position) <= 0.3)
             newPositionReached = true;
@@ -61,7 +60,7 @@ public class MoveCamera : MonoBehaviour
     {
         if(slowDownSpeed > 0.1f)
         {
-            slowDownSpeed *= 0.87f;
+            slowDownSpeed *= 0.9f;
         }
 
         Vector3 desiredStep = targetPosition - gameObject.transform.position;

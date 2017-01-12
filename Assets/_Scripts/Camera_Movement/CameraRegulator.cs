@@ -5,9 +5,6 @@ using UnityEngine;
 public class CameraRegulator : MonoBehaviour
 {
     [SerializeField]
-    private string[] tags;
-
-    [SerializeField]
     private GameObject cam;
     private MoveCamera moveCamera;
     private NewCameraPosition newCamPosition;
@@ -19,27 +16,16 @@ public class CameraRegulator : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {
-        
-        if(tags.Length - 1 >= 0)
+    {              
+        if (other.CompareTag(Tags.newPosition))
         {
-            if (other.CompareTag(tags[0]))
-            {
-                setTargetPosition(other.gameObject);
-            }
-            else if (tags.Length - 1 >= 1)
-            {
-                if (other.CompareTag(tags[1]))
-                {
-                    setNewPosition(other.gameObject);
-                }
-            }
-        }       
-        else
-        {
-            Debug.LogWarning("no tags asignt");
+            setTargetPosition(other.gameObject);
         }
-        
+            
+        if (other.CompareTag(Tags.newRoom))
+        {
+            setNewPosition(other.gameObject);
+        }               
     }
 
     private void setTargetPosition(GameObject other)
