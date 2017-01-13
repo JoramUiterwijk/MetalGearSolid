@@ -4,36 +4,31 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    //private float y = 0f;
+    private Vector3 movement;
+    private float x;
+    private float z;
+    private Rigidbody rigidBody;
+    private float speed = 10;
+    private float dash = 2.0f;
+
+    void Awake()
+    {
+        rigidBody = GetComponent<Rigidbody>();
+    }
 
     void Update()
     {
-        var x = Input.GetAxis("Horizontal") * Time.deltaTime * 250.0f;
-        var z = Input.GetAxis("Vertical") * Time.deltaTime * 5.0f;
+        x = Input.GetAxisRaw("Horizontal");
+        z = Input.GetAxisRaw("Vertical");
 
-        transform.Rotate(0, x, 0);
-        transform.Translate(0, 0, z);
-        /*
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            y = 1f;
-        }
-        else
-        {
-            y = 0f;
-        }
+        movement = transform.forward.normalized * z;
     }
 
-    void OnCollisionEnter(Collision other) 
+    void FixedUpdate()
     {
-        if (other.gameObject.tag == ("Stairs"))
-        {
-            //y += 1;
-            //Debug.Log("Up!");
-        }
-        else
-        {
-            
-        }*/
+        Vector3 velocity = movement * speed * Time.fixedDeltaTime;
+        rigidBody.rotation = Quaternion.Euler(rigidBody.rotation.eulerAngles + new Vector3(0f, 2 * x, 0f));
+        rigidBody.MovePosition(rigidBody.position + velocity);
+        rigidBody.AddForce(Physics.gravity * rigidBody.mass);
     }
 }
