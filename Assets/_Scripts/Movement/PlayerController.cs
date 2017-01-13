@@ -29,6 +29,6 @@ public class PlayerController : MonoBehaviour
         Vector3 velocity = movement * speed * Time.fixedDeltaTime;
         rigidBody.rotation = Quaternion.Euler(rigidBody.rotation.eulerAngles + new Vector3(0f, 2 * x, 0f));
         rigidBody.MovePosition(rigidBody.position + velocity);
-        rigidBody.AddForce(Physics.gravity * rigidBody.mass);
+        //rigidBody.AddForce(Physics.gravity * rigidBody.mass);
     }
 }
