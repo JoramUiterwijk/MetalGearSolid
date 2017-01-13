@@ -74,6 +74,6 @@ public class MoveCamera : MonoBehaviour
 
     private void smoothRotate()
     {
-        gameObject.transform.localRotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotateSpeed); ;
+        gameObject.transform.localRotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotateSpeed); 
     }
 }
