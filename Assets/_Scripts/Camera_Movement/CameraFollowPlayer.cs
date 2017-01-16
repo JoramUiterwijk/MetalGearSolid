@@ -5,6 +5,9 @@ using UnityEngine;
 public class CameraFollowPlayer : MonoBehaviour {
 
     [SerializeField]
+    private GameObject gameobjectRotaion;
+
+    [SerializeField]
     private GameObject player;
 
     [SerializeField]
@@ -26,12 +29,12 @@ public class CameraFollowPlayer : MonoBehaviour {
 
     private void Update()
     {
-        if (Vector3.Distance(player.transform.position, this.gameObject.transform.position) > 0.2f && followThePlayer)
-            smoothMove();
-        //else if (Vector3.Distance(playerCamera.transform.position, this.gameObject.transform.position) <= 0.2)
-            //followThePlayer = false;
+        playerCameraPosion = player.transform.position - playerCameraDistance;
 
-        if (gameObject.transform.localRotation != player.transform.localRotation && !newRotationReached)
+        if (Vector3.Distance(playerCameraPosion, this.gameObject.transform.position) > 0.2f && followThePlayer)
+            smoothMove();
+
+        if (gameObject.transform.localRotation != gameobjectRotaion.transform.localRotation && !newRotationReached)
             smoothRotate();
         else
         newRotationReached = true;
@@ -53,7 +56,8 @@ public class CameraFollowPlayer : MonoBehaviour {
 
     private void smoothMove()
     {
-        Vector3 desiredStep = player.transform.position - gameObject.transform.position;
+
+        Vector3 desiredStep = playerCameraPosion - gameObject.transform.position;
 
         desiredStep.Normalize();
 
@@ -65,6 +69,6 @@ public class CameraFollowPlayer : MonoBehaviour {
 
     private void smoothRotate()
     {
-        gameObject.transform.localRotation = Quaternion.Slerp(transform.rotation, player.transform.localRotation, Time.deltaTime * rotateSpeed);
+        gameObject.transform.localRotation = Quaternion.Slerp(transform.rotation, gameobjectRotaion.transform.localRotation, Time.deltaTime * rotateSpeed);
     }
 }
