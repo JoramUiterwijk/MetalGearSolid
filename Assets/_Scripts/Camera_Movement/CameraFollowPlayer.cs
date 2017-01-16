@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraFollowPlayer : MonoBehaviour {
 
     [SerializeField]
-    private GameObject gameobjectRotaion;
+    private GameObject gameobjectRotation;
 
     [SerializeField]
     private GameObject player;
@@ -34,7 +34,7 @@ public class CameraFollowPlayer : MonoBehaviour {
         if (Vector3.Distance(playerCameraPosion, this.gameObject.transform.position) > 0.2f && followThePlayer)
             smoothMove();
 
-        if (gameObject.transform.localRotation != gameobjectRotaion.transform.localRotation && !newRotationReached)
+        if (gameObject.transform.localRotation != gameobjectRotation.transform.localRotation && !newRotationReached)
             smoothRotate();
         else
         newRotationReached = true;
@@ -42,7 +42,6 @@ public class CameraFollowPlayer : MonoBehaviour {
 
     public void follow()
     {
-        print("following");
         newRotationReached = false;
         followThePlayer = true;
     }
@@ -69,6 +68,7 @@ public class CameraFollowPlayer : MonoBehaviour {
 
     private void smoothRotate()
     {
-        gameObject.transform.localRotation = Quaternion.Slerp(transform.rotation, gameobjectRotaion.transform.localRotation, Time.deltaTime * rotateSpeed);
+        //gameobjectRotation.transform.localRotation
+        gameObject.transform.localRotation = Quaternion.Slerp(transform.localRotation, gameobjectRotation.transform.localRotation, Time.deltaTime * rotateSpeed);
     }
 }

@@ -880,12 +880,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1c947b333606c438869b83bd5ec809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameobjectRotaion: {fileID: 719227138}
+  gameobjectRotation: {fileID: 719227138}
   player: {fileID: 975218387}
   playerCameraDistance: {x: 0, y: -2.4, z: 3.4}
   maxSpeed: 15
   rotateSpeed: 13
-  playerCameraRotation: {x: 40, y: 0, z: 0, w: 0}
+  playerCameraRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &582191790
 GameObject:
   m_ObjectHideFlags: 0
