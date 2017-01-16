@@ -12,4 +12,6 @@ public class Tags
     public const string stairDown = "StairDown";
     public const string newRoom = "NewRoom";
     public const string newPosition = "NewPosition";
+    public const string followPlayer = "FollowPlayer";
+    public const string playerCamera = "PlayerCamera";
 }

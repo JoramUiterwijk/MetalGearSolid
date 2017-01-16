@@ -7,11 +7,14 @@ public class CameraRegulator : MonoBehaviour
     [SerializeField]
     private GameObject cam;
     private MoveCamera moveCamera;
+    private CameraFollowPlayer followPlayer;
     private NewCameraPosition newCamPosition;
+    
 
 	private void Start ()
     {
         moveCamera = cam.GetComponent<MoveCamera>();
+        followPlayer = cam.GetComponent<CameraFollowPlayer>();
         newCamPosition = cam.GetComponent<NewCameraPosition>();
     }
 
@@ -25,7 +28,20 @@ public class CameraRegulator : MonoBehaviour
         if (other.CompareTag(Tags.newRoom))
         {
             setNewPosition(other.gameObject);
-        }               
+        }
+
+        if (other.CompareTag(Tags.followPlayer))
+        {
+            followThePlayer();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag(Tags.followPlayer))
+        {
+            stopFollowing();
+        }
     }
 
     private void setTargetPosition(GameObject other)
@@ -39,4 +55,15 @@ public class CameraRegulator : MonoBehaviour
         Transform child = other.transform.Find("NewPosition");
         newCamPosition.newPosition(child);
     }
+
+    private void followThePlayer()
+    {
+        followPlayer.follow();
+    }
+
+    private void stopFollowing()
+    {
+        followPlayer.stopFollow();
+    }
+
 }
