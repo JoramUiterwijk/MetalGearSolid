@@ -19,6 +19,13 @@ public class MoveCamera : MonoBehaviour
     private bool newPositionReached = true;
     private bool newRotationReached = true;
 
+    private CameraRotate cameraRotate;
+
+    private void Start()
+    {
+        cameraRotate = gameObject.GetComponent<CameraRotate>();
+    }
+
     public void newPosition (Transform newTrans)
     {    
         targetPosition = newTrans.position;
@@ -26,21 +33,20 @@ public class MoveCamera : MonoBehaviour
         newPositionReached = false;
         newRotationReached = false;
         slowDownSpeed = maxSpeed;
+        cameraRotate.desiredRotation(newTrans, rotateSpeed);
     }
 
 	void Update ()
     {
-        if(Vector3.Distance(targetPosition, this.gameObject.transform.position) > 2f && !newPositionReached)
-            smoothMove();      
-        else if (Vector3.Distance(targetPosition, this.gameObject.transform.position) > 0.2 && !newPositionReached)
-            smothSlowdown();
-        else if(Vector3.Distance(targetPosition, this.gameObject.transform.position) <= 0.3)
-            newPositionReached = true;
-
-        if (gameObject.transform.localRotation != targetRotation && !newRotationReached)
-            smoothRotate();
-        else
-            newRotationReached = true;
+        if (!newPositionReached)
+        {
+            if (Vector3.Distance(targetPosition, this.gameObject.transform.position) > 2f )
+                smoothMove();
+            else if (Vector3.Distance(targetPosition, this.gameObject.transform.position) > 0.3)
+                smothSlowdown();
+            else if (Vector3.Distance(targetPosition, this.gameObject.transform.position) <= 0.3)
+                newPositionReached = true;
+        }        
     }
 
     private void smoothMove()
@@ -70,10 +76,5 @@ public class MoveCamera : MonoBehaviour
         desiredStep = desiredStep * slowDownSpeed;
 
         transform.position += desiredStep * Time.deltaTime;
-    }
-
-    private void smoothRotate()
-    {
-        gameObject.transform.localRotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotateSpeed); 
     }
 }

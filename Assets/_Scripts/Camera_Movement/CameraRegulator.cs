@@ -16,6 +16,7 @@ public class CameraRegulator : MonoBehaviour
         moveCamera = cam.GetComponent<MoveCamera>();
         followPlayer = cam.GetComponent<CameraFollowPlayer>();
         newCamPosition = cam.GetComponent<NewCameraPosition>();
+
     }
 
     private void OnTriggerEnter(Collider other)
