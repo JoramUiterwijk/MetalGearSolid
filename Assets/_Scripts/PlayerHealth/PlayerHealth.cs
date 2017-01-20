@@ -1,16 +1,30 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour {
+public class PlayerHealth : MonoBehaviour 
+{
+	private PlayerHealthUI healthUI;
 
-	// Use this for initialization
-	void Start () {
-		
+	private float health;
+	public float getHealth{get{return health;}}
+
+	private void Start()
+	{
+		health = 100;
+
+		healthUI = GetComponent<PlayerHealthUI> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	public void doDamage(int damage)
+	{
+		if (health > 0)
+		{
+			health -= damage;
+		}
+		if (health < 0)
+		{
+			health = 0;
+		}
+		healthUI.updateBar ();
 	}
 }
