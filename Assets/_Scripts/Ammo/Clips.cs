@@ -38,8 +38,13 @@ public class Clips : MonoBehaviour
 			return reloading;
 		}
 	}
+
+	private AmmoUI ui;
+	private CreateBullets bullets;
 	private void Start()
 	{
+		ui = GetComponent<AmmoUI> ();
+		bullets = GetComponent<CreateBullets> ();
 		clipCapacity = 15;
 		clipAmount = 4;
 		curClipCapacity = clipCapacity;
@@ -48,9 +53,10 @@ public class Clips : MonoBehaviour
 
 	private void Update()
 	{
-		if (curClipCapacity < 1&&clipAmount>0&&!reloading)
+		if (curClipCapacity < 1&&!reloading)
 		{
-			StartCoroutine ("reloadTime");
+			ui.showEmpty ();
+			reload ();
 		}
 	}
 
@@ -69,6 +75,9 @@ public class Clips : MonoBehaviour
 		clipAmount --;
 		curClipCapacity = clipCapacity;
 		reloading = false;
+		ui.hideEmpty ();
+		bullets.createBullets (1);
+		ui.updateUI ();
 	}
 
 	public void addClip(int amount)
@@ -79,5 +88,6 @@ public class Clips : MonoBehaviour
 	public void removeBullet(int amount)
 	{
 		curClipCapacity -= amount;
+		ui.shoot ();
 	}
 }

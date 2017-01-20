@@ -4,26 +4,38 @@ using UnityEngine.UI;
 
 public class AmmoUI : MonoBehaviour 
 {
+	private CreateBullets removeBullets;
 	private Clips clips;
 	[SerializeField]private Text totalAmmo;
-	[SerializeField]private Image bullets;
+	[SerializeField]private Image emptyImage;
 
 	private void Start()
 	{
 		clips = GetComponent<Clips> ();
+		removeBullets = GetComponent<CreateBullets> (); 
+		hideEmpty ();
 		updateUI ();
 	}
 
-	private void Update()
+	public void updateUI()
 	{
-		updateUI ();
-	}
-
-	private void updateUI()
-	{
-		float bulletWidth = (float)(clips.curCapasity) / (float)(clips.capacity);
-		bullets.fillAmount = bulletWidth;
 		int total = clips.amount * clips.capacity + clips.curCapasity;
 		totalAmmo.text = clips.curCapasity+"/"+total;
+	}
+
+	public void shoot()
+	{
+		updateUI ();
+		removeBullets.removeBullet ();
+	}
+
+	public void showEmpty()
+	{
+		emptyImage.gameObject.SetActive (true);
+	}
+
+	public void hideEmpty()
+	{
+		emptyImage.gameObject.SetActive (false);
 	}
 }
