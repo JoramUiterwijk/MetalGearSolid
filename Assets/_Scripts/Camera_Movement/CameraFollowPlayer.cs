@@ -16,34 +16,37 @@ public class CameraFollowPlayer : MonoBehaviour {
     private Vector3 playerCameraPosion;
 
     [SerializeField]
-    private float maxSpeed = 10;
+    private float maxSpeed = 15;
 
     [SerializeField]
     private float rotateSpeed = 10;
 
-    [SerializeField]
-    private Quaternion playerCameraRotation;
+    private CameraRotate cameraRotate;
 
     private bool followThePlayer = false;
     private bool newRotationReached = true;
+
+    private void Start()
+    {
+        cameraRotate = gameObject.GetComponent<CameraRotate>();
+    }
 
     private void Update()
     {
         playerCameraPosion = player.transform.position - playerCameraDistance;
 
-        if (Vector3.Distance(playerCameraPosion, this.gameObject.transform.position) > 0.2f && followThePlayer)
-            smoothMove();
-
-        if (gameObject.transform.localRotation != gameobjectRotation.transform.localRotation && !newRotationReached)
-            smoothRotate();
-        else
-        newRotationReached = true;
+        if (followThePlayer)
+        {
+            if (Vector3.Distance(playerCameraPosion, this.gameObject.transform.position) > 0.2f)
+                smoothMove();
+        }        
     }
 
     public void follow()
     {
         newRotationReached = false;
         followThePlayer = true;
+        cameraRotate.desiredRotation(gameobjectRotation.transform, rotateSpeed);
     }
 
     public void stopFollow()
@@ -55,7 +58,6 @@ public class CameraFollowPlayer : MonoBehaviour {
 
     private void smoothMove()
     {
-
         Vector3 desiredStep = playerCameraPosion - gameObject.transform.position;
 
         desiredStep.Normalize();
@@ -63,12 +65,5 @@ public class CameraFollowPlayer : MonoBehaviour {
         desiredStep = desiredStep * maxSpeed;
 
         transform.position += desiredStep * Time.deltaTime;
-
-    }
-
-    private void smoothRotate()
-    {
-        //gameobjectRotation.transform.localRotation
-        gameObject.transform.localRotation = Quaternion.Slerp(transform.localRotation, gameobjectRotation.transform.localRotation, Time.deltaTime * rotateSpeed);
     }
 }
