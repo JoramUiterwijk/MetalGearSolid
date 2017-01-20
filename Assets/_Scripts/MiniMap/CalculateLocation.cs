@@ -5,7 +5,7 @@ public class CalculateLocation : MonoBehaviour
 {
 	[Tooltip("Put the Object that the minimap should follow in here")]
 	[SerializeField]private Transform personToFollow;
-	private float zoomLevel = 10f;
+	private float zoomLevel = 1f;
 	public float getZoom
 	{
 		get
@@ -13,7 +13,6 @@ public class CalculateLocation : MonoBehaviour
 			return zoomLevel;
 		}
 	}
-	//public float getZoomLevel{get{return getZoomLevel;}}
 
 	public Vector2 transformPosition(Vector3 position)
 	{
