@@ -9,23 +9,44 @@ public class CameraRegulator : MonoBehaviour
     private MoveCamera moveCamera;
     private CameraFollowPlayer followPlayer;
     private NewCameraPosition newCamPosition;
-    
+
+    private bool first = true;
 
 	private void Start ()
     {
         moveCamera = cam.GetComponent<MoveCamera>();
         followPlayer = cam.GetComponent<CameraFollowPlayer>();
         newCamPosition = cam.GetComponent<NewCameraPosition>();
-
     }
 
     private void OnTriggerEnter(Collider other)
-    {              
+    {
+        if (!first)
+        {
+            findTag(other);
+        }
+        else
+        {
+            firstTag(other);
+        }           
+    }
+
+    private void firstTag(Collider other)
+    {
+        if (other.CompareTag(Tags.newPosition) || other.CompareTag(Tags.newRoom))
+        {
+            setNewPosition(other.gameObject);
+            first = false;
+        }
+    }
+
+    private void findTag(Collider other)
+    {
         if (other.CompareTag(Tags.newPosition))
         {
             setTargetPosition(other.gameObject);
         }
-            
+
         if (other.CompareTag(Tags.newRoom))
         {
             setNewPosition(other.gameObject);
