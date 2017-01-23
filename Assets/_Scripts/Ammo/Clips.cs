@@ -41,7 +41,7 @@ public class Clips : MonoBehaviour
 
 	private AmmoUI ui;
 	private CreateBullets bullets;
-	private void Start()
+	private void Awake()
 	{
 		ui = GetComponent<AmmoUI> ();
 		bullets = GetComponent<CreateBullets> ();
