@@ -35,6 +35,6 @@ public class LoadSceneUI : MonoBehaviour
 		float percentage = loadGame.GetPercentage;
 
 		//Set the progress text
-		loadPercentage.text = "Loading"+percentage + "%";
+		loadPercentage.text = "Loading: "+percentage + "%";
 	}
 }

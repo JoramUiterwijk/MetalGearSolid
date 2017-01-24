@@ -30,11 +30,12 @@ public class ButtonHoverLogic : MonoBehaviour
 		}
 	}
 
-	private void selectButton(int index)
+	public void selectButton(int index)
 	{
 		buttons [index].Select ();
 		activeSprite (0,false,true);
 		activeSprite (index,true,false);
+		i = index;
 	}
 
 	private void Update()
