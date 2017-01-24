@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 089fa9642c7734782b410c1452dfaf4a
+timeCreated: 1485171178
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: AV07 Ration
+  fontNames:
+  - AV07 Ration
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -13,6 +13,7 @@ TagManager:
   - NewRoom
   - PlayerCamera
   - FollowPlayer
+  - Ground
   layers:
   - Default
   - TransparentFX
