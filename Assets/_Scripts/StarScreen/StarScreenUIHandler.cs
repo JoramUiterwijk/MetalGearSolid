@@ -8,9 +8,11 @@ public class StarScreenUIHandler : MonoBehaviour
 {
 	[SerializeField]private Button[] buttons;
 	[SerializeField]private GameObject[] allPanels;
+	[SerializeField]private ButtonHoverLogic[] buttonLogic;
 
 	private LoadSceneVisible loadScript{get;set;}
 	private CloseGame closeScript{get;set;}
+	private SaveProperties save{get;set;}
 
 	private void Start()
 	{
@@ -18,22 +20,35 @@ public class StarScreenUIHandler : MonoBehaviour
 		{
 			disableScreen (i);
 		}
-		enableScreen (3);
 
 		setReferences ();
 		setButtonListeners ();
+		enableScreen (3);
 	}
 
 	private void setReferences()
 	{
 		loadScript = GetComponent<LoadSceneVisible> ();
 		closeScript = GetComponent<CloseGame> ();
+		save = GetComponent<SaveProperties> ();
 	}
 
 	private void setButtonListeners()
 	{
-		buttons [0].onClick.AddListener (delegate(){loadScript.LoadScene(1); allPanels[1].SetActive(true);});
-		buttons [1].onClick.AddListener (delegate(){allPanels[2].SetActive(true);});
+		buttons [0].onClick.AddListener (delegate()
+		{
+			save.Save();
+			loadScript.LoadScene(1); 
+			allPanels[1].SetActive(true);
+		});
+
+		buttons [1].onClick.AddListener (delegate()
+		{
+			allPanels[2].SetActive(true);
+			buttonLogic[0].enabled = false;
+			buttonLogic[1].enabled=true;
+		});
+			
 		buttons [2].onClick.AddListener (delegate(){closeScript.quit();});
 	}
 

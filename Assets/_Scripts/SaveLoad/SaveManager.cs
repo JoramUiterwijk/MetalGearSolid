@@ -3,10 +3,9 @@
 [System.Serializable]
 public class SaveManager
 {
-	private int playerHealth{get;set;}
-	public int setplayerHealth
-	{
-		get{return playerHealth;}
-		set{playerHealth = value;}
-	}
+	//Make the variable accessible to get and set from other scripts 	
+	public float Volume{get;set;}
+		
+	//Make the variable accessible to get and set from other scripts	
+	public int Quality{get;set;}
 }
