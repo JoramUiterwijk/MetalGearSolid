@@ -6,6 +6,7 @@ public class AmmoUI : MonoBehaviour
 {
 	private CreateBullets removeBullets;
 	private Clips clips;
+	private int total;
 	[SerializeField]private Text totalAmmo;
 	[SerializeField]private Image emptyImage;
 
@@ -14,13 +15,14 @@ public class AmmoUI : MonoBehaviour
 		clips = GetComponent<Clips> ();
 		removeBullets = GetComponent<CreateBullets> (); 
 		hideEmpty ();
+		total = clips.amount * clips.capacity + clips.curCapasity;
 		updateUI ();
 	}
 
 	public void updateUI()
 	{
-		int total = clips.amount * clips.capacity + clips.curCapasity;
-		totalAmmo.text = clips.curCapasity+"/"+total;
+		int curCapasity = clips.amount * clips.capacity + clips.curCapasity;
+		totalAmmo.text = curCapasity+"/"+total;
 	}
 
 	public void shoot()

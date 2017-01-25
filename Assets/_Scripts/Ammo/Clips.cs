@@ -46,7 +46,7 @@ public class Clips : MonoBehaviour
 		ui = GetComponent<AmmoUI> ();
 		bullets = GetComponent<CreateBullets> ();
 		clipCapacity = 15;
-		clipAmount = 4;
+		clipAmount = 6;
 		curClipCapacity = clipCapacity;
 		reloading = false;
 	}

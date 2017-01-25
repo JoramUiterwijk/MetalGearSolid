@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 27dba0024a6084d6197ef7113526a89b
+timeCreated: 1485192370
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Metal Gear
+  fontNames:
+  - Metal Gear
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
