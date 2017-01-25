@@ -12,11 +12,25 @@ public class CameraRegulator : MonoBehaviour
 
     private bool first = true;
 
+    public bool followingPlayer = false;
+
 	private void Start ()
     {
         moveCamera = cam.GetComponent<MoveCamera>();
         followPlayer = cam.GetComponent<CameraFollowPlayer>();
         newCamPosition = cam.GetComponent<NewCameraPosition>();
+    }
+
+    private void Update()
+    {
+        if (followingPlayer)
+        {
+            followThePlayer();
+        }
+        if (!followingPlayer)
+        {
+            stopFollowing();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -36,7 +50,7 @@ public class CameraRegulator : MonoBehaviour
     {
             if (other.CompareTag(Tags.followPlayer))
             {
-                stopFollowing();
+                followingPlayer = false;
             }       
     }
 
@@ -63,10 +77,9 @@ public class CameraRegulator : MonoBehaviour
 
         if (other.CompareTag(Tags.followPlayer))
         {
-            followThePlayer();
+            followingPlayer = true;
         }
     }
-
 
     private void setTargetPosition(GameObject other)
     {
@@ -85,7 +98,7 @@ public class CameraRegulator : MonoBehaviour
         followPlayer.follow();
     }
 
-    private void stopFollowing()
+    public void stopFollowing()
     {
         followPlayer.stopFollow();
     }
