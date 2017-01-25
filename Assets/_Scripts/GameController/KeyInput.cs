@@ -14,7 +14,7 @@ public class KeyInput : MonoBehaviour
     {
         _camera = GameObject.FindGameObjectWithTag("MainCamera");
         _firstPerson = _camera.GetComponent<FirstPersonCamera>();
-	}
+    }
 	
 	void Update ()
     {

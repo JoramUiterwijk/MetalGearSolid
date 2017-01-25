@@ -21,14 +21,23 @@ public class CameraRegulator : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!first)
-        {
-            findTag(other);
-        }
-        else
-        {
-            firstTag(other);
-        }           
+
+            if (!first)
+            {
+                findTag(other);
+            }
+            else
+            {
+                firstTag(other);
+            }             
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+            if (other.CompareTag(Tags.followPlayer))
+            {
+                stopFollowing();
+            }       
     }
 
     private void firstTag(Collider other)
@@ -58,13 +67,6 @@ public class CameraRegulator : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag(Tags.followPlayer))
-        {
-            stopFollowing();
-        }
-    }
 
     private void setTargetPosition(GameObject other)
     {
