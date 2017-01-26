@@ -5,45 +5,23 @@ using UnityEngine;
 public class FirstPersonCameraRotate : MonoBehaviour
 {
     public float moveSpeed = 20.0f;
-    public bool invert;
-    private float hozTurn = 0.0f;
-    private float verTurn = 0.0f;
-    float minRotation = -0.45f;
-    float maxRotation = 45f;
-    private float currentRotation;
+    float maxRotation = 90f;
 
     void Start()
     {
-        transform.localRotation = Quaternion.identity;
+
     }
 
     void Update()
     {
-        int invertVal = 1;
-        if (invert)
-        {
-            invertVal = -1;
-        }
 
-        currentRotation = transform.localRotation.x;
-
-        hozTurn = Input.GetAxis("CamRotHor") * moveSpeed * Time.deltaTime;
+        float hozTurn = Input.GetAxis("CamRotHor") * moveSpeed * Time.deltaTime;
         transform.Rotate(hozTurn * Vector3.up, Space.World);
 
-        print(currentRotation);
-        if (currentRotation > minRotation && currentRotation < maxRotation)
-        {
-            verTurn = Input.GetAxis("CamRotVer") * moveSpeed * Time.deltaTime * invertVal;
-            transform.Rotate(verTurn * Vector3.right, Space.Self);
-        }
-        else
-        {
-            currentRotation = -0.45f;
-        }
+        float verTurn = Input.GetAxis("CamRotVer") * moveSpeed * Time.deltaTime * -1;
+        transform.Rotate(verTurn * Vector3.right, Space.Self);
 
-        /*Vector3 currentRot = transform.localRotation.eulerAngles;
-        currentRot.x =  Mathf.Clamp(currentRot.x, minRotation, maxRotation);
-        transform.localRotation = Quaternion.Euler(currentRot);*/
+        //Vector3 currentRot = transform.localRotation.eulerAngles;
+        this.transform.eulerAngles = new Vector3(Mathf.Clamp(this.transform.eulerAngles.x, 0, 45), this.transform.eulerAngles.y, this.transform.eulerAngles.z);
     }
-
 }
