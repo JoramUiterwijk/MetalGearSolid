@@ -12,6 +12,8 @@ public class CameraRegulator : MonoBehaviour
 
     private bool first = true;
 
+    public bool followingPlayer = false;
+
 	private void Start ()
     {
         moveCamera = cam.GetComponent<MoveCamera>();
@@ -19,16 +21,37 @@ public class CameraRegulator : MonoBehaviour
         newCamPosition = cam.GetComponent<NewCameraPosition>();
     }
 
+    private void Update()
+    {
+        if (followingPlayer)
+        {
+            followThePlayer();
+        }
+        if (!followingPlayer)
+        {
+            stopFollowing();
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (!first)
-        {
-            findTag(other);
-        }
-        else
-        {
-            firstTag(other);
-        }           
+
+            if (!first)
+            {
+                findTag(other);
+            }
+            else
+            {
+                firstTag(other);
+            }             
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+            if (other.CompareTag(Tags.followPlayer))
+            {
+                followingPlayer = false;
+            }       
     }
 
     private void firstTag(Collider other)
@@ -54,15 +77,7 @@ public class CameraRegulator : MonoBehaviour
 
         if (other.CompareTag(Tags.followPlayer))
         {
-            followThePlayer();
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag(Tags.followPlayer))
-        {
-            stopFollowing();
+            followingPlayer = true;
         }
     }
 
@@ -83,7 +98,7 @@ public class CameraRegulator : MonoBehaviour
         followPlayer.follow();
     }
 
-    private void stopFollowing()
+    public void stopFollowing()
     {
         followPlayer.stopFollow();
     }
