@@ -26,11 +26,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Movement();
-
-        /*x = Input.GetAxisRaw("Horizontal");
-        z = Input.GetAxisRaw("Vertical");
-
-        movement = transform.forward.normalized * z;*/
     }
 
     private void Movement()
