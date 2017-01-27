@@ -1,0 +1,375 @@
+fileFormatVersion: 2
+guid: ea4f7f74eed074af49d825ee75668456
+timeCreated: 1485523782
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Snake_ohmygod_itsgood:Body3
+    100004: Snake_ohmygod_itsgood:Head
+    100006: Snake_ohmygod_itsgood:HeadTop_End
+    100008: Snake_ohmygod_itsgood:Hips
+    100010: Snake_ohmygod_itsgood:LeftArm
+    100012: Snake_ohmygod_itsgood:LeftFoot
+    100014: Snake_ohmygod_itsgood:LeftForeArm
+    100016: Snake_ohmygod_itsgood:LeftHand
+    100018: Snake_ohmygod_itsgood:LeftHandIndex1
+    100020: Snake_ohmygod_itsgood:LeftHandIndex2
+    100022: Snake_ohmygod_itsgood:LeftHandIndex3
+    100024: Snake_ohmygod_itsgood:LeftHandIndex4
+    100026: Snake_ohmygod_itsgood:LeftHandMiddle1
+    100028: Snake_ohmygod_itsgood:LeftHandMiddle2
+    100030: Snake_ohmygod_itsgood:LeftHandMiddle3
+    100032: Snake_ohmygod_itsgood:LeftHandMiddle4
+    100034: Snake_ohmygod_itsgood:LeftHandPinky1
+    100036: Snake_ohmygod_itsgood:LeftHandPinky2
+    100038: Snake_ohmygod_itsgood:LeftHandPinky3
+    100040: Snake_ohmygod_itsgood:LeftHandPinky4
+    100042: Snake_ohmygod_itsgood:LeftHandRing1
+    100044: Snake_ohmygod_itsgood:LeftHandRing2
+    100046: Snake_ohmygod_itsgood:LeftHandRing3
+    100048: Snake_ohmygod_itsgood:LeftHandRing4
+    100050: Snake_ohmygod_itsgood:LeftHandThumb1
+    100052: Snake_ohmygod_itsgood:LeftHandThumb2
+    100054: Snake_ohmygod_itsgood:LeftHandThumb3
+    100056: Snake_ohmygod_itsgood:LeftHandThumb4
+    100058: Snake_ohmygod_itsgood:LeftLeg
+    100060: Snake_ohmygod_itsgood:LeftShoulder
+    100062: Snake_ohmygod_itsgood:LeftToe_End
+    100064: Snake_ohmygod_itsgood:LeftToeBase
+    100066: Snake_ohmygod_itsgood:LeftUpLeg
+    100068: Snake_ohmygod_itsgood:Neck
+    100070: Snake_ohmygod_itsgood:RightArm
+    100072: Snake_ohmygod_itsgood:RightFoot
+    100074: Snake_ohmygod_itsgood:RightForeArm
+    100076: Snake_ohmygod_itsgood:RightHand
+    100078: Snake_ohmygod_itsgood:RightHandIndex1
+    100080: Snake_ohmygod_itsgood:RightHandIndex2
+    100082: Snake_ohmygod_itsgood:RightHandIndex3
+    100084: Snake_ohmygod_itsgood:RightHandIndex4
+    100086: Snake_ohmygod_itsgood:RightHandMiddle1
+    100088: Snake_ohmygod_itsgood:RightHandMiddle2
+    100090: Snake_ohmygod_itsgood:RightHandMiddle3
+    100092: Snake_ohmygod_itsgood:RightHandMiddle4
+    100094: Snake_ohmygod_itsgood:RightHandPinky1
+    100096: Snake_ohmygod_itsgood:RightHandPinky2
+    100098: Snake_ohmygod_itsgood:RightHandPinky3
+    100100: Snake_ohmygod_itsgood:RightHandPinky4
+    100102: Snake_ohmygod_itsgood:RightHandRing1
+    100104: Snake_ohmygod_itsgood:RightHandRing2
+    100106: Snake_ohmygod_itsgood:RightHandRing3
+    100108: Snake_ohmygod_itsgood:RightHandRing4
+    100110: Snake_ohmygod_itsgood:RightHandThumb1
+    100112: Snake_ohmygod_itsgood:RightHandThumb2
+    100114: Snake_ohmygod_itsgood:RightHandThumb3
+    100116: Snake_ohmygod_itsgood:RightHandThumb4
+    100118: Snake_ohmygod_itsgood:RightLeg
+    100120: Snake_ohmygod_itsgood:RightShoulder
+    100122: Snake_ohmygod_itsgood:RightToe_End
+    100124: Snake_ohmygod_itsgood:RightToeBase
+    100126: Snake_ohmygod_itsgood:RightUpLeg
+    100128: Snake_ohmygod_itsgood:Spine
+    100130: Snake_ohmygod_itsgood:Spine1
+    100132: Snake_ohmygod_itsgood:Spine2
+    400000: //RootNode
+    400002: Snake_ohmygod_itsgood:Body3
+    400004: Snake_ohmygod_itsgood:Head
+    400006: Snake_ohmygod_itsgood:HeadTop_End
+    400008: Snake_ohmygod_itsgood:Hips
+    400010: Snake_ohmygod_itsgood:LeftArm
+    400012: Snake_ohmygod_itsgood:LeftFoot
+    400014: Snake_ohmygod_itsgood:LeftForeArm
+    400016: Snake_ohmygod_itsgood:LeftHand
+    400018: Snake_ohmygod_itsgood:LeftHandIndex1
+    400020: Snake_ohmygod_itsgood:LeftHandIndex2
+    400022: Snake_ohmygod_itsgood:LeftHandIndex3
+    400024: Snake_ohmygod_itsgood:LeftHandIndex4
+    400026: Snake_ohmygod_itsgood:LeftHandMiddle1
+    400028: Snake_ohmygod_itsgood:LeftHandMiddle2
+    400030: Snake_ohmygod_itsgood:LeftHandMiddle3
+    400032: Snake_ohmygod_itsgood:LeftHandMiddle4
+    400034: Snake_ohmygod_itsgood:LeftHandPinky1
+    400036: Snake_ohmygod_itsgood:LeftHandPinky2
+    400038: Snake_ohmygod_itsgood:LeftHandPinky3
+    400040: Snake_ohmygod_itsgood:LeftHandPinky4
+    400042: Snake_ohmygod_itsgood:LeftHandRing1
+    400044: Snake_ohmygod_itsgood:LeftHandRing2
+    400046: Snake_ohmygod_itsgood:LeftHandRing3
+    400048: Snake_ohmygod_itsgood:LeftHandRing4
+    400050: Snake_ohmygod_itsgood:LeftHandThumb1
+    400052: Snake_ohmygod_itsgood:LeftHandThumb2
+    400054: Snake_ohmygod_itsgood:LeftHandThumb3
+    400056: Snake_ohmygod_itsgood:LeftHandThumb4
+    400058: Snake_ohmygod_itsgood:LeftLeg
+    400060: Snake_ohmygod_itsgood:LeftShoulder
+    400062: Snake_ohmygod_itsgood:LeftToe_End
+    400064: Snake_ohmygod_itsgood:LeftToeBase
+    400066: Snake_ohmygod_itsgood:LeftUpLeg
+    400068: Snake_ohmygod_itsgood:Neck
+    400070: Snake_ohmygod_itsgood:RightArm
+    400072: Snake_ohmygod_itsgood:RightFoot
+    400074: Snake_ohmygod_itsgood:RightForeArm
+    400076: Snake_ohmygod_itsgood:RightHand
+    400078: Snake_ohmygod_itsgood:RightHandIndex1
+    400080: Snake_ohmygod_itsgood:RightHandIndex2
+    400082: Snake_ohmygod_itsgood:RightHandIndex3
+    400084: Snake_ohmygod_itsgood:RightHandIndex4
+    400086: Snake_ohmygod_itsgood:RightHandMiddle1
+    400088: Snake_ohmygod_itsgood:RightHandMiddle2
+    400090: Snake_ohmygod_itsgood:RightHandMiddle3
+    400092: Snake_ohmygod_itsgood:RightHandMiddle4
+    400094: Snake_ohmygod_itsgood:RightHandPinky1
+    400096: Snake_ohmygod_itsgood:RightHandPinky2
+    400098: Snake_ohmygod_itsgood:RightHandPinky3
+    400100: Snake_ohmygod_itsgood:RightHandPinky4
+    400102: Snake_ohmygod_itsgood:RightHandRing1
+    400104: Snake_ohmygod_itsgood:RightHandRing2
+    400106: Snake_ohmygod_itsgood:RightHandRing3
+    400108: Snake_ohmygod_itsgood:RightHandRing4
+    400110: Snake_ohmygod_itsgood:RightHandThumb1
+    400112: Snake_ohmygod_itsgood:RightHandThumb2
+    400114: Snake_ohmygod_itsgood:RightHandThumb3
+    400116: Snake_ohmygod_itsgood:RightHandThumb4
+    400118: Snake_ohmygod_itsgood:RightLeg
+    400120: Snake_ohmygod_itsgood:RightShoulder
+    400122: Snake_ohmygod_itsgood:RightToe_End
+    400124: Snake_ohmygod_itsgood:RightToeBase
+    400126: Snake_ohmygod_itsgood:RightUpLeg
+    400128: Snake_ohmygod_itsgood:Spine
+    400130: Snake_ohmygod_itsgood:Spine1
+    400132: Snake_ohmygod_itsgood:Spine2
+    4300000: Snake_ohmygod_itsgood:Body3
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Snake_ohmygod_itsgood:Body3
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Body3
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:LeftUpLeg
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:LeftUpLeg/Snake_ohmygod_itsgood:LeftLeg
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:LeftUpLeg/Snake_ohmygod_itsgood:LeftLeg/Snake_ohmygod_itsgood:LeftFoot
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:LeftUpLeg/Snake_ohmygod_itsgood:LeftLeg/Snake_ohmygod_itsgood:LeftFoot/Snake_ohmygod_itsgood:LeftToeBase
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:LeftUpLeg/Snake_ohmygod_itsgood:LeftLeg/Snake_ohmygod_itsgood:LeftFoot/Snake_ohmygod_itsgood:LeftToeBase/Snake_ohmygod_itsgood:LeftToe_End
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:RightUpLeg
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:RightUpLeg/Snake_ohmygod_itsgood:RightLeg
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:RightUpLeg/Snake_ohmygod_itsgood:RightLeg/Snake_ohmygod_itsgood:RightFoot
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:RightUpLeg/Snake_ohmygod_itsgood:RightLeg/Snake_ohmygod_itsgood:RightFoot/Snake_ohmygod_itsgood:RightToeBase
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:RightUpLeg/Snake_ohmygod_itsgood:RightLeg/Snake_ohmygod_itsgood:RightFoot/Snake_ohmygod_itsgood:RightToeBase/Snake_ohmygod_itsgood:RightToe_End
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandIndex1
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandIndex1/Snake_ohmygod_itsgood:LeftHandIndex2
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandIndex1/Snake_ohmygod_itsgood:LeftHandIndex2/Snake_ohmygod_itsgood:LeftHandIndex3
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandIndex1/Snake_ohmygod_itsgood:LeftHandIndex2/Snake_ohmygod_itsgood:LeftHandIndex3/Snake_ohmygod_itsgood:LeftHandIndex4
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandMiddle1
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandMiddle1/Snake_ohmygod_itsgood:LeftHandMiddle2
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandMiddle1/Snake_ohmygod_itsgood:LeftHandMiddle2/Snake_ohmygod_itsgood:LeftHandMiddle3
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandMiddle1/Snake_ohmygod_itsgood:LeftHandMiddle2/Snake_ohmygod_itsgood:LeftHandMiddle3/Snake_ohmygod_itsgood:LeftHandMiddle4
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandPinky1
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandPinky1/Snake_ohmygod_itsgood:LeftHandPinky2
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandPinky1/Snake_ohmygod_itsgood:LeftHandPinky2/Snake_ohmygod_itsgood:LeftHandPinky3
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandPinky1/Snake_ohmygod_itsgood:LeftHandPinky2/Snake_ohmygod_itsgood:LeftHandPinky3/Snake_ohmygod_itsgood:LeftHandPinky4
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandRing1
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandRing1/Snake_ohmygod_itsgood:LeftHandRing2
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandRing1/Snake_ohmygod_itsgood:LeftHandRing2/Snake_ohmygod_itsgood:LeftHandRing3
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandRing1/Snake_ohmygod_itsgood:LeftHandRing2/Snake_ohmygod_itsgood:LeftHandRing3/Snake_ohmygod_itsgood:LeftHandRing4
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandThumb1
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandThumb1/Snake_ohmygod_itsgood:LeftHandThumb2
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandThumb1/Snake_ohmygod_itsgood:LeftHandThumb2/Snake_ohmygod_itsgood:LeftHandThumb3
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:LeftShoulder/Snake_ohmygod_itsgood:LeftArm/Snake_ohmygod_itsgood:LeftForeArm/Snake_ohmygod_itsgood:LeftHand/Snake_ohmygod_itsgood:LeftHandThumb1/Snake_ohmygod_itsgood:LeftHandThumb2/Snake_ohmygod_itsgood:LeftHandThumb3/Snake_ohmygod_itsgood:LeftHandThumb4
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:Neck
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:Neck/Snake_ohmygod_itsgood:Head
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:Neck/Snake_ohmygod_itsgood:Head/Snake_ohmygod_itsgood:HeadTop_End
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandIndex1
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandIndex1/Snake_ohmygod_itsgood:RightHandIndex2
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandIndex1/Snake_ohmygod_itsgood:RightHandIndex2/Snake_ohmygod_itsgood:RightHandIndex3
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandIndex1/Snake_ohmygod_itsgood:RightHandIndex2/Snake_ohmygod_itsgood:RightHandIndex3/Snake_ohmygod_itsgood:RightHandIndex4
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandMiddle1
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandMiddle1/Snake_ohmygod_itsgood:RightHandMiddle2
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandMiddle1/Snake_ohmygod_itsgood:RightHandMiddle2/Snake_ohmygod_itsgood:RightHandMiddle3
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandMiddle1/Snake_ohmygod_itsgood:RightHandMiddle2/Snake_ohmygod_itsgood:RightHandMiddle3/Snake_ohmygod_itsgood:RightHandMiddle4
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandPinky1
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandPinky1/Snake_ohmygod_itsgood:RightHandPinky2
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandPinky1/Snake_ohmygod_itsgood:RightHandPinky2/Snake_ohmygod_itsgood:RightHandPinky3
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandPinky1/Snake_ohmygod_itsgood:RightHandPinky2/Snake_ohmygod_itsgood:RightHandPinky3/Snake_ohmygod_itsgood:RightHandPinky4
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandRing1
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandRing1/Snake_ohmygod_itsgood:RightHandRing2
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandRing1/Snake_ohmygod_itsgood:RightHandRing2/Snake_ohmygod_itsgood:RightHandRing3
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandRing1/Snake_ohmygod_itsgood:RightHandRing2/Snake_ohmygod_itsgood:RightHandRing3/Snake_ohmygod_itsgood:RightHandRing4
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandThumb1
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandThumb1/Snake_ohmygod_itsgood:RightHandThumb2
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandThumb1/Snake_ohmygod_itsgood:RightHandThumb2/Snake_ohmygod_itsgood:RightHandThumb3
+        weight: 1
+      - path: Snake_ohmygod_itsgood:Hips/Snake_ohmygod_itsgood:Spine/Snake_ohmygod_itsgood:Spine1/Snake_ohmygod_itsgood:Spine2/Snake_ohmygod_itsgood:RightShoulder/Snake_ohmygod_itsgood:RightArm/Snake_ohmygod_itsgood:RightForeArm/Snake_ohmygod_itsgood:RightHand/Snake_ohmygod_itsgood:RightHandThumb1/Snake_ohmygod_itsgood:RightHandThumb2/Snake_ohmygod_itsgood:RightHandThumb3/Snake_ohmygod_itsgood:RightHandThumb4
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
