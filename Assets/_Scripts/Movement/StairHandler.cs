@@ -14,7 +14,6 @@ public class StairHandler : MonoBehaviour
     {
         if (other.transform.tag == Tags.stairUp)
         {
-            Debug.Log("Up");
             if (Vector3.Angle(rigidBody.velocity, other.transform.forward) < 90)
             {
                 if (rigidBody.velocity.y > 0)
@@ -27,7 +26,6 @@ public class StairHandler : MonoBehaviour
 
         if (other.transform.tag == Tags.stairDown)
         {
-            Debug.Log("Down");
             if (Vector3.Angle(rigidBody.velocity, other.transform.forward) < 90)
             {
                 rigidBody.AddForce(0, -9000, 0);

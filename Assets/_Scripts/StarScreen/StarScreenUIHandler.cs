@@ -49,7 +49,7 @@ public class StarScreenUIHandler : MonoBehaviour
 			buttonLogic[1].enabled=true;
 		});
 
-		buttons[2].onClick.AddListener(delegate(){enableScreen(4);buttonLogic[0].enabled = false;});
+		buttons[2].onClick.AddListener(delegate(){enableScreen(4);});
 
 		buttons [3].onClick.AddListener (delegate(){closeScript.quit();});
 	}

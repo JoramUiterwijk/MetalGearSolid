@@ -24,6 +24,7 @@ public class CheckFloor : MonoBehaviour
 
 			if (hit.collider.CompareTag (Tags.stairs))
 			{
+				print ("stairs");
 				handler.metalStep ();
 			}
 
