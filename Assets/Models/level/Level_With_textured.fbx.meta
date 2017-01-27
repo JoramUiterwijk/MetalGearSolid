@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 14e8fdcde74be9043acbd408833d20b1
-timeCreated: 1485536097
+guid: 5c68fe5ed916c4dbabc3e6bea03e0122
+timeCreated: 1485539403
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -227,47 +227,11 @@ ModelImporter:
     4300066: group23
     4300068: pCube44
     4300070: pCube45
-    6400000: Cieling
-    6400002: group23
-    6400004: pCube13
-    6400006: pCube17
-    6400008: pCube23
-    6400010: pCube28
-    6400012: pCube30
-    6400014: pCube31
-    6400016: pCube32
-    6400018: pCube34
-    6400020: pCube35
-    6400022: pCube36
-    6400024: pCube37
-    6400026: pCube38
-    6400028: pCube39
-    6400030: pCube40
-    6400032: pCube41
-    6400034: pCube42
-    6400036: pCube43
-    6400038: pCube44
-    6400040: pCube45
-    6400042: pCube46
-    6400044: pCube47
-    6400046: pCube48
-    6400048: pCube49
-    6400050: pCube50
-    6400052: pCube51
-    6400054: pCube52
-    6400056: pCube53
-    6400058: pCube54
-    6400060: pCube6
-    6400062: pCylinder3
-    6400064: pCylinder4
-    6400066: pCylinder5
-    6400068: pPlane1
-    6400070: Side_wall
     9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
-    materialSearch: 2
+    materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -290,7 +254,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
