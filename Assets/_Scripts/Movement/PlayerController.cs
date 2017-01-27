@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
 
 
     public Vector3 eulerAngleVelocity;
-
     void Awake()
     {
         rigidBody = GetComponent<Rigidbody>();
