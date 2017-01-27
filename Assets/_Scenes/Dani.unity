@@ -6200,7 +6200,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 94215b1506a157340a498261ef9fdc3b, type: 2}
+  - {fileID: 2100000, guid: d343fc1f601174605bd1a5b9d8269d01, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8866,7 +8866,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 94215b1506a157340a498261ef9fdc3b, type: 2}
+  - {fileID: 2100000, guid: d343fc1f601174605bd1a5b9d8269d01, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8952,7 +8952,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: fce2edd47e2a5e04589b5a46fe8faded, type: 2}
+  - {fileID: 2100000, guid: d343fc1f601174605bd1a5b9d8269d01, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11650,6 +11650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1225694516}
+  followingPlayer: 0
 --- !u!4 &2053355502 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
