@@ -63,8 +63,6 @@ public class OptionsLogic : MonoBehaviour
 			startScreen.disableScreen(2);
 			startScreen.enableScreen(0);
 		});
-			
-		buttons [3].onClick.AddListener (delegate(){save.Save();});
 	}
 
 	private void back()

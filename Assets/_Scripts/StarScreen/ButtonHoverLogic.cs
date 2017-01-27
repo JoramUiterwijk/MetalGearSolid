@@ -40,7 +40,7 @@ public class ButtonHoverLogic : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetKeyDown (KeyCode.DownArrow))
+		if (Input.GetKeyDown (KeyCode.DownArrow)||Input.GetKeyDown(KeyCode.RightArrow))
 		{
 			i++;
 			if (i > buttons.Length-1)
@@ -50,7 +50,7 @@ public class ButtonHoverLogic : MonoBehaviour
 			selectButton (i);
 		}
 
-		if (Input.GetKeyDown (KeyCode.UpArrow))
+		if (Input.GetKeyDown (KeyCode.UpArrow)||Input.GetKeyDown(KeyCode.LeftArrow))
 		{
 			i--;
 			if (i < 0)
