@@ -6,7 +6,6 @@ public class FirstPersonCamera : MonoBehaviour {
 
     private Vector3 _lastCameraPosition;
     private Quaternion _lastCameraRotation;
-    //private Transform _lastCameraTransform;
 
     [SerializeField]
     private GameObject _PlayerEye;
