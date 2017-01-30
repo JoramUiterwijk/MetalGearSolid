@@ -48,7 +48,7 @@ public class KeyInput : MonoBehaviour
                 _camReg.followingPlayer = false;
             }
             _playerController.enabled = false;
-
+            _player.GetComponent<SkinnedMeshRenderer>().enabled = false;
             kKeyPresed = true;
             _firstPerson.setFirstPerson();
             _firstPersonCameraRotate.enabled = true;
@@ -60,6 +60,7 @@ public class KeyInput : MonoBehaviour
             {
                 _camReg.followingPlayer = true;
             }
+            _player.GetComponent<SkinnedMeshRenderer>().enabled = true;
             _firstPersonCameraRotate.enabled = false;
             _firstPersonCameraRotate.transform.eulerAngles = Vector3.zero;
             _playerController.enabled = true;
