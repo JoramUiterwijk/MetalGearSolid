@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 54128245065910330}
   - component: {fileID: 65620775904996142}
   - component: {fileID: 95305770781432866}
+  - component: {fileID: 136159542447560870}
   m_Layer: 0
   m_Name: PlayerNew
   m_TagString: Player
@@ -1704,7 +1705,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1279956057769208}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09, y: -3.59, z: -6.05}
+  m_LocalPosition: {x: -0.1, y: -4.42, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 4920549082184122}
@@ -2125,6 +2126,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a22f3da4aa35bee45bb00b0278324e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &136159542447560870
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1279956057769208}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.052667942
+  m_Height: 0.13296326
+  m_Direction: 1
+  m_Center: {x: -0.00056233676, y: 0.09494439, z: 0.008639072}
 --- !u!137 &137509696128731206
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
