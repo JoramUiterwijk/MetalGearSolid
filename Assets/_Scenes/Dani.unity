@@ -598,8 +598,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.012514813, y: 0.01, z: 0.04675401}
-  m_Center: {x: 0.0012574042, y: 0, z: -0.018378852}
+  m_Size: {x: 0.014963683, y: 0.01, z: 0.04675401}
+  m_Center: {x: 0.0024818697, y: 0, z: -0.018382188}
 --- !u!1 &220989585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,8 +1407,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.01251481, y: 0.01, z: 0.043429293}
-  m_Center: {x: 0.0012575776, y: 0, z: 0.016715411}
+  m_Size: {x: 0.016748928, y: 0.01, z: 0.043429293}
+  m_Center: {x: 0.0033748804, y: 0, z: 0.016716054}
 --- !u!1 &667558275 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1654650765452872, guid: b1de232d268fc4d33b22788baa4cd26c,
@@ -3132,23 +3132,6 @@ Prefab:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1225694516}
-    - target: {fileID: 54128245065910330, guid: 7e495dc8b571243a5b00ac4e08240f4e,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 4698318260133078, guid: 7e495dc8b571243a5b00ac4e08240f4e, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4698318260133078, guid: 7e495dc8b571243a5b00ac4e08240f4e, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4698318260133078, guid: 7e495dc8b571243a5b00ac4e08240f4e, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 1279956057769208, guid: 7e495dc8b571243a5b00ac4e08240f4e, type: 2}
       propertyPath: m_Name
       value: Player
