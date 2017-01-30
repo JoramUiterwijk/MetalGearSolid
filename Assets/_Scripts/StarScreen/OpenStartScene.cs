@@ -8,6 +8,8 @@ public class OpenStartScene : MonoBehaviour
 
 	private void Start()
 	{
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
 		startScreen = GetComponent<StarScreenUIHandler> ();
 		buttonLogic = GetComponent<ButtonHoverLogic> ();
 	}
