@@ -5,9 +5,7 @@ using UnityEngine;
 public class MoveCamera : MonoBehaviour
 {
     [SerializeField]
-    private float maxSpeed = 10;
-
-    private float slowDownSpeed;
+    private float maxSpeed = .1f;
 
     private Vector3 targetPosition;
 
@@ -32,7 +30,6 @@ public class MoveCamera : MonoBehaviour
         targetRotation = newTrans.localRotation;
         newPositionReached = false;
         newRotationReached = false;
-        slowDownSpeed = maxSpeed;
         cameraRotate.desiredRotation(newTrans, rotateSpeed);
     }
 
@@ -40,41 +37,15 @@ public class MoveCamera : MonoBehaviour
     {
         if (!newPositionReached)
         {
-            if (Vector3.Distance(targetPosition, this.gameObject.transform.position) > 2f )
+            if (Vector3.Distance(targetPosition, this.gameObject.transform.position) > 0.1f )
                 smoothMove();
-            else if (Vector3.Distance(targetPosition, this.gameObject.transform.position) > 0.3)
-                smothSlowdown();
-            else if (Vector3.Distance(targetPosition, this.gameObject.transform.position) <= 0.3)
+            else
                 newPositionReached = true;
         }        
     }
 
     private void smoothMove()
     {
-        //smooth naar de target bewegen. moet nog aan werken!!!
-        Vector3 desiredStep = targetPosition - gameObject.transform.position;
-
-        desiredStep.Normalize();
-
-        desiredStep = desiredStep * maxSpeed;
-
-        transform.position += desiredStep * Time.deltaTime;
-    
-    }
-    
-    private void smothSlowdown()
-    {
-        if(slowDownSpeed > 0.1f)
-        {
-            slowDownSpeed *= 0.9f;
-        }
-
-        Vector3 desiredStep = targetPosition - gameObject.transform.position;
-
-        desiredStep.Normalize();
-
-        desiredStep = desiredStep * slowDownSpeed;
-
-        transform.position += desiredStep * Time.deltaTime;
+        transform.position = Vector3.Slerp(gameObject.transform.position, targetPosition, maxSpeed);   
     }
 }
