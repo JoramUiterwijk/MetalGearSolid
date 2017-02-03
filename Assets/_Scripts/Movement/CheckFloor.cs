@@ -14,18 +14,16 @@ public class CheckFloor : MonoBehaviour
 
 	public void checkGround(int footIndex)
 	{
-		Debug.DrawRay (feet[footIndex].transform.position,-transform.up,Color.red);
 		if(Physics.Raycast(feet[footIndex].transform.position,-transform.up,out hit,10f))
 		{
 			if (hit.collider.CompareTag (Tags.ground))
 			{
-				handler.standardStep ();
+				handler.playStepSound("normal");
 			}
 
 			if (hit.collider.CompareTag (Tags.stairs))
 			{
-				print ("stairs");
-				handler.metalStep ();
+				handler.playStepSound("metal");
 			}
 
 			if(hit.collider.CompareTag (Tags.water))

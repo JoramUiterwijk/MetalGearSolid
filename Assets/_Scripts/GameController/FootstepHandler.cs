@@ -17,9 +17,18 @@ public class FootstepHandler : MonoBehaviour
 	{
 		audio = GetComponent<AudioHandler> ();
 	}
-	public void standardStep()
+
+	public void playStepSound(string groundType)
 	{
-		audio.playAudio (step, false);
+		if (groundType == "normal")
+		{
+			audio.playAudio (step, false);
+		}
+
+		if (groundType == "metal")
+		{
+			audio.playAudio (metal, false);
+		}
 	}
 
 	public void metalStep()

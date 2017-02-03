@@ -55,7 +55,7 @@ public class Clips : MonoBehaviour
 	{
 		if (curClipCapacity < 1&&!reloading)
 		{
-			ui.showEmpty ();
+			ui.showEmpty (true);
 			reload ();
 		}
 	}
@@ -75,7 +75,7 @@ public class Clips : MonoBehaviour
 		clipAmount --;
 		curClipCapacity = clipCapacity;
 		reloading = false;
-		ui.hideEmpty ();
+		ui.showEmpty (false);
 		bullets.createBullets (1);
 		ui.updateUI ();
 	}

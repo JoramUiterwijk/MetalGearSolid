@@ -14,7 +14,7 @@ public class AmmoUI : MonoBehaviour
 	{
 		clips = GetComponent<Clips> ();
 		removeBullets = GetComponent<CreateBullets> (); 
-		hideEmpty ();
+		showEmpty (false);
 		total = clips.amount * clips.capacity + clips.curCapasity;
 		updateUI ();
 	}
@@ -31,13 +31,10 @@ public class AmmoUI : MonoBehaviour
 		removeBullets.removeBullet ();
 	}
 
-	public void showEmpty()
-	{
-		emptyImage.gameObject.SetActive (true);
-	}
 
-	public void hideEmpty()
+
+	public void showEmpty(bool value)
 	{
-		emptyImage.gameObject.SetActive (false);
+		emptyImage.gameObject.SetActive (value);
 	}
 }

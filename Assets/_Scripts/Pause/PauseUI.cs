@@ -34,7 +34,7 @@ public class PauseUI : MonoBehaviour
 	private void setButtonListeners()
 	{
 		buttons[0].onClick.AddListener(delegate(){logic.switchPauseState();});
-		buttons [1].onClick.AddListener(delegate(){logic.switchPauseState();SceneManager.LoadScene(0);});
+		buttons [1].onClick.AddListener(delegate(){logic.switchPauseState(); SceneManager.UnloadSceneAsync(1); SceneManager.LoadScene(0);});
 	}
 
 	public void enablePausePanel()
