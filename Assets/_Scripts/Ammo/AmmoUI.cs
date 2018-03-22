@@ -30,9 +30,7 @@ public class AmmoUI : MonoBehaviour
 		updateUI ();
 		removeBullets.removeBullet ();
 	}
-
-
-
+		
 	public void showEmpty(bool value)
 	{
 		emptyImage.gameObject.SetActive (value);

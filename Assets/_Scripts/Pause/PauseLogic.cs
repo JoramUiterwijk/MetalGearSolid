@@ -9,7 +9,7 @@ public class PauseLogic : MonoBehaviour
 	private PauseUI ui;
 	private ShootInput shootInput;
 	private DoDamage damageInput;
-	private PlayerController playerMovement;
+	private Movement playerMovement;
 
 	//Boolean to check if we are already paused
 	private bool paused;
@@ -28,7 +28,7 @@ public class PauseLogic : MonoBehaviour
 		ui = GetComponent<PauseUI> ();
 		shootInput = GetComponent<ShootInput> ();
 		damageInput = GetComponent<DoDamage> ();
-		playerMovement = GameObject.FindGameObjectWithTag(Tags.player).GetComponent<PlayerController>();
+		playerMovement = GameObject.FindGameObjectWithTag(Tags.player).GetComponent<Movement>();
 	}
 
 	public void switchPauseState()
@@ -59,7 +59,7 @@ public class PauseLogic : MonoBehaviour
 		Time.timeScale = 0;
 
 		//Stop the scripts
-		stopScripts ();
+		startScripts (false);
 	}
 
 	private void continueGame()
@@ -71,22 +71,14 @@ public class PauseLogic : MonoBehaviour
 		Time.timeScale = 1;
 
 		//Start all the scripts
-		startScripts ();
+		startScripts (true);
 	}
 
-	private void stopScripts()
+	private void startScripts(bool value)
 	{
 		//Stop scripts that do not use the time
-		shootInput.enabled = false;
-		damageInput.enabled = false;
-		playerMovement.enabled = false;
-	}
-
-	private void startScripts()
-	{
-		//Start scripts that do not use the time
-		shootInput.enabled = true;
-		damageInput.enabled = true;
-		playerMovement.enabled = true;
+		shootInput.enabled = value;
+		damageInput.enabled = value;
+		playerMovement.enabled = value;
 	}
 }

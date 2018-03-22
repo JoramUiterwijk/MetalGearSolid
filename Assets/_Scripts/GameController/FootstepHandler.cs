@@ -31,11 +31,6 @@ public class FootstepHandler : MonoBehaviour
 		}
 	}
 
-	public void metalStep()
-	{
-		audio.playAudio(metal,false);
-	}
-
 	public void waterStep(Vector3 position)
 	{
 		audio.playAudio (step, false);
